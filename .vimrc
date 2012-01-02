@@ -120,6 +120,8 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 let g:CommandTSelectNextMap='<Down>'
 let g:CommandTSelectPrevMap='<Up>'
 
+map <leader>F :Ack 
+
 " Couldn't these go in .vimrc???
 " nnoremap <C-left> :vertical resize -5<cr>
 " nnoremap <C-down> :resize +4<cr>
