@@ -113,8 +113,7 @@ vnoremap K {
 syntax enable
 set guifont=Monaco:h13
 " set background=dark 
-colorscheme solarized 
-" color railscasts
+color ir_black
 
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 let g:CommandTSelectNextMap='<Down>'
