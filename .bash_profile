@@ -3,6 +3,9 @@
 # Load my custom aliases
 source ~/.custom.aliases.bash
 
+# ^l clear screen in vi-mode
+bind -m vi-insert "\C-l":clear-screen
+
 # Load RVM, if you are using it
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
