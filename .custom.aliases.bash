@@ -19,7 +19,7 @@ alias gpom="git push origin master"
 alias gup="git pull --rebase"
 alias gb="git branch"
 alias gst="git status"
-alias gc="git checkout $1"
+alias gc="git commit $1"
 alias gdt="git difftool $1"
 
 # Load my private aliases (SSH shortcuts, etc)
