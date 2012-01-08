@@ -5,7 +5,7 @@ alias bp="vim .bash_profile"
 
 # Terminal stuff
 alias tmux="TERM=screen-256color-bce tmux"
-alias cl="clear"
+# alias cl="clear" # just use ctrl-l
 
 # Ruby testing
 alias st="clear && ruby -I test $1" # short-cut to run a single unit test. assumes you are in rails root.
