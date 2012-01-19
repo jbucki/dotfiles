@@ -31,7 +31,7 @@ let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
 " CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+" map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
 " Remember last location in file
@@ -105,24 +105,32 @@ vnoremap J }
 vnoremap K {
 
 " Window resizing
-"nnoremap <C-left> :vertical resize -5<cr>
-"nnoremap <C-down> :resize +5<cr>
-"nnoremap <C-up> :resize -5<cr>
-"nnoremap <C-right> :vertical resize +5<cr>
+if bufwinnr(1)
+  map + <C-W>+
+  map - <C-W>-
+endif
+" nnoremap <C-Left> :vertical resize -5<cr>
+" nnoremap <C-Down> :resize +4<cr>
+" nnoremap <C-Up> :resize -5<cr>
+" nnoremap <C-Right> :vertical resize +5<cr>
+" nnoremap <S-Up> :normal <c-r>=Resize('+')<CR><CR>
+" nnoremap <S-Down> :normal <c-r>=Resize('-')<CR><CR>
+" nnoremap <S-Left> :normal <c-r>=Resize('<')<CR><CR>
+" nnoremap <S-Right> :normal <c-r>=Resize('>')<CR><CR>
 
 syntax enable
 set guifont=Monaco:h13
-" set background=dark 
 color ir_black
 
+" File searching
+map <leader>F :Ack 
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 let g:CommandTSelectNextMap='<Down>'
 let g:CommandTSelectPrevMap='<Up>'
 
-map <leader>F :Ack 
-
-" Couldn't these go in .vimrc???
-" nnoremap <C-left> :vertical resize -5<cr>
-" nnoremap <C-down> :resize +4<cr>
-" nnoremap <C-up> :resize -5<cr>
-" nnoremap <C-right> :vertical resize +5<cr>
+let vimclojure#FuzzyIndent=1
+let vimclojure#HighlightBuiltins=1
+let vimclojure#HighlightContrib=1
+let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
+" let vimclojure#WantNailgun = 1
