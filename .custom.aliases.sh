@@ -20,6 +20,7 @@ alias pbjsonpretty='pbpaste | python -mjson.tool | pygmentize -l javascript'
 alias rg="rails g $1"
 
 # Git
+alias gcm="git checkout master"
 alias gpom="git push origin master"
 alias gpoq="git push origin qa"
 alias gup="git pull --rebase"
