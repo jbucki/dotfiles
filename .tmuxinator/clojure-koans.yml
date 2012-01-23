@@ -1,0 +1,42 @@
+# ~/.tmuxinator/clojure-koans.yml
+# you can make as many tabs as you wish...
+
+project_name: Clojure-Koans
+project_root: ~/projects/personal/clojure-koans
+tabs:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - lein repl
+        - script/run
+  - notes: vim ~/projects/personal/joc/notes
+# ~/.tmuxinator/energyprint.yml
+# # you can make as many tabs as you wish...
+#
+# project_name: EnergyPrint
+# project_root: ~/projects/work/energyprint
+# # socket_name: foo # Not needed.  Remove to use default socket
+# rvm: jruby-1.6.4
+# # pre: sudo /etc/rc.d/mysqld start
+# tabs:
+#   - editor:
+#         layout: main-horizontal
+#               panes:
+#                       - vim
+#                               - #empty, will just run plain bash
+#                                 - console: rails c
+#                                   - server: trinidad
+#                                     - worker: QUEUE=* rake resque:work
+#                                       - memcached: memcached -vv 
+#                                         - redis: redis-server config/redis.dev.conf
+# - server/workers:
+#     layout: main-horizontal
+#     panes:
+#       - trinidad
+#       - QUEUE=* rake resque:work
+# - redis/memcached:
+#     layout: main-horizontal
+#     panes:
+#       - memcached -vv
+#       - redis-server config/redis.dev.conf
