@@ -10,7 +10,7 @@ bindkey "^R" history-incremental-search-backward
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # Load tmuxinator
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+# [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -42,3 +42,5 @@ source $ZSH/oh-my-zsh.sh
 # Custom/machine-specific files
 source ~/.custom.sh
 source ~/.custom.aliases.sh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
