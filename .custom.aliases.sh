@@ -16,9 +16,12 @@ alias tmux="TERM=screen-256color-bce tmux"
 # tmux
 alias tma="tmux attach -t $1"
 alias tme="vim ~/.tmux.conf && echo 'Reloading tmux conf file...' && tmux source ~/.tmux.conf"
+alias tkill="tmux kill-session -t $1"
+alias tls="tmux ls"
 
 # tmux project config
-alias tmep="tmux -f ~/energyprint.tmux.conf attach"
+alias tstart_fc="tmux -f ~/fanchatter.tmux.conf attach"
+alias tstart_ep="tmux -f ~/energyprint.tmux.conf attach"
 
 # Ruby testing
 alias st="clear && ruby -I test $1" # short-cut to run a single unit test. assumes you are in rails root.
